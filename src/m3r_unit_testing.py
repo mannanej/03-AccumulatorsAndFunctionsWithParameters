@@ -5,7 +5,7 @@ This module helps you understand:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
          Aaron Wilkin, their colleagues, and Eddie Mannan.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 ###############################################################################
 #
 # DONE: 1.
@@ -58,7 +58,7 @@ def distance(point):
     """
     # This code has an error, on purpose.  Do NOT fix it.
     x_squared = point.x * point.x
-    y_squared = point.y * point.x
+    y_squared = point.y * point.x                   #The error is the second X
 
     return math.sqrt(x_squared + y_squared)
 
@@ -69,7 +69,7 @@ def distance(point):
 main()
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #
 # READ the following, asking questions as needed.
 # When you believe that you understading what is says about UNIT TESTING,
