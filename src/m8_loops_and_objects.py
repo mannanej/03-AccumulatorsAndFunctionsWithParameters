@@ -17,11 +17,11 @@ def main():
     #print_sequence1()     this one works
     #draw_circles1()       this one works
     #print_sequence2()     this one works
-    #draw_circles2()
+    draw_circles2()
     #print_sequence3()     this one works
     #draw_circles3()       this one works
     #print_cosines()       this one works
-    draw_cosines_and_sines()
+    #draw_cosines_and_sines()
     # Test your functions by putting calls to them here:
 
 
@@ -114,7 +114,7 @@ def draw_circles2():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # -------------------------------------------------------------------------
@@ -125,6 +125,7 @@ def draw_circles2():
     window = rg.RoseWindow(400, 400)
     for k in range(23):
         circle = rg.Circle(rg.Point(50 * k, 100), 10,)
+        circle.fill_color = 'blue'
         circle.attach_to(window)
     window.render()
     window.close_on_mouse_click()
