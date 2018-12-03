@@ -15,8 +15,9 @@ import rosegraphics as rg
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
     #print_sequence1()     this one works
-    #draw_circles1()
-    #print_sequence2()
+    #draw_circles1()       this one works
+    #print_sequence2()     this one works
+    draw_circles2()
     # Test your functions by putting calls to them here:
 
 
@@ -53,7 +54,7 @@ def draw_circles1():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # HINT: You might find a prior module useful when 'writing' this code.
@@ -63,15 +64,11 @@ def draw_circles1():
     print('Running draw_circles1:  See graphics window')
     print('--------------------------------------------------')
     window = rg.RoseWindow(400, 400)
-    jakob = rg.SimpleTurtle()
-    jakob.speed = 100
     for k in range(22):
-        for k in range(21):
-            jakob.draw_circle(k * 10)
+        circle = rg.Circle(rg.Point(200, 200), k * 10)
+        circle.attach_to(window)
+    window.render()
     window.close_on_mouse_click()
-
-
-
 
 def print_sequence2():
     """
@@ -85,7 +82,7 @@ def print_sequence2():
       390.
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # -------------------------------------------------------------------------
@@ -93,9 +90,11 @@ def print_sequence2():
     print('--------------------------------------------------')
     print('Running print_sequence2:')
     print('--------------------------------------------------')
-    for k in range():
-        value1 = 50
-        value2 =
+
+    start = 30
+    for k in range(18):
+        start = start + 20
+        print(start)
 
 
 
@@ -119,6 +118,12 @@ def draw_circles2():
     print('--------------------------------------------------')
     print('Running draw_circles2:  See graphics window')
     print('--------------------------------------------------')
+    window = rg.RoseWindow(400, 400)
+    for k in range(23):
+        circle = rg.Circle(rg.Point(50 * k, 100), 10,)
+        circle.attach_to(window)
+    window.render()
+    window.close_on_mouse_click()
 
 
 def print_sequence3():
