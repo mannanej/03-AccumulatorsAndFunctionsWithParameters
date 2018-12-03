@@ -43,7 +43,7 @@ def run_test_sum_cosines():
 
     # Test 3:
     expected = 1
-    answer = sum_cosines(4)
+    answer = sum_cosines(5)
     print('Test 3 expected:', expected)
     print('       actual: ', answer)
 
@@ -58,12 +58,12 @@ def sum_cosines(n):
       If n is 3, this function returns
         cos(0) + cos(1) + cos(2) + cos(3)   which is about 0.13416.
     """
+    value1 = 0
     for k in range(n + 1):
-        value1 = math.cos(n + k)
-        value2 =
-    return value2
+        value1 = value1 + math.cos(k)
+    return value1
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
@@ -94,14 +94,14 @@ def run_test_sum_square_roots():
     print('       actual: ', answer)
 
     # Test 2:
-    expected = 1
-    answer = sum_square_roots()
+    expected = 31.775
+    answer = sum_square_roots(10)
     print('Test 2 expected:', expected)
     print('       actual: ', answer)
 
     # Test 3:
-    expected = 1
-    answer = sum_square_roots()
+    expected = 19.06
+    answer = sum_square_roots(7)
     print('Test 3 expected:', expected)
     print('       actual: ', answer)
 
@@ -119,9 +119,12 @@ def sum_square_roots(n):
          sqrt(2) + sqrt(4) + sqrt(6) + sqrt(8) + sqrt(10),
       which is about 11.854408.
     """
-    for k in range(k + 2)
+    value1 = 0
+    for k in range(n + 1):
+        value1 = value1 + math.sqrt(k * 2)
+    return value1
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
