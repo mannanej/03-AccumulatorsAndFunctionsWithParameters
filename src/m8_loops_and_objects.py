@@ -14,14 +14,14 @@ import rosegraphics as rg
 
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
-    #print_sequence1()     this one works
-    #draw_circles1()       this one works
-    #print_sequence2()     this one works
+    print_sequence1()
+    draw_circles1()
+    print_sequence2()
     draw_circles2()
-    #print_sequence3()     this one works
-    #draw_circles3()       this one works
-    #print_cosines()       this one works
-    #draw_cosines_and_sines()
+    print_sequence3()
+    draw_circles3()
+    print_cosines()
+    draw_cosines_and_sines()
     # Test your functions by putting calls to them here:
 
 
